@@ -1,0 +1,41 @@
+body {
+	font-family: sans-serif;
+}
+p {
+	font-size:12px;
+}
+h2 {text-transform: uppercase;}
+
+img {
+	display: block;
+	margin-top: 30px;
+	width: 100%;}
+li {
+    list-style-type: none;
+}    
+
+.principles {
+    display: block;
+    margin-top: 50px;
+}
+.point{
+    display: block;
+    margin-left: 30px;
+}
+.offer{
+    display: block;
+    margin-top: 70px;
+}
+.spisok{}
+.spisok1{
+	display: inline-block;
+	vertical-align: top;
+    margin-left: 30px;
+	width: 200px;
+}
+.spisok2{
+	display: inline-block;
+	vertical-align: top;
+
+	width: 200px;
+}
