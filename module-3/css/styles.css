@@ -1,41 +1,103 @@
 body {
-	font-family: sans-serif;
+	width: 480px;
+	margin: 0;
 }
-p {
-	font-size:12px;
+@font-face {
+    font-family: 'pathway_gothic_oneregular';
+    src: url('../fonts/pathwaygothicone-regular-webfont.eot');
+    src: url('../fonts/pathwaygothicone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pathwaygothicone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pathwaygothicone-regular-webfont.woff') format('woff'),
+         url('../fonts/pathwaygothicone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/pathwaygothicone-regular-webfont.svg#pathway_gothic_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-h2 {text-transform: uppercase;}
 
+h2 {
+    font-family: 'pathway_gothic_oneregular', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: rgba(38, 53, 85, 255);
+    text-align: left;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: rgba(78, 80, 80, 255);
+    text-align: left;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 500;
+    color: rgba(38, 53, 85, 255);
+}
+span {
+	font-family: ﻿Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(38, 53, 85, 255);
+    text-align: left;
+}
 img {
 	display: block;
-	margin-top: 30px;
-	width: 100%;}
+    width: 406px;
+	margin-top: 32px;
+}
+
 li {
     list-style-type: none;
 }    
-
+.wrapper {
+	display: block;
+	width: 403px;
+	margin-top: 59px;
+    margin-left: 37px;	
+	
+}
 .principles {
     display: block;
+    width: 403px;
     margin-top: 50px;
+    margin-left: 37px;	
+	
 }
-.point{
+.point-1 {
     display: block;
-    margin-left: 30px;
+    margin-left: 35px;
 }
-.offer{
+.point-2 {
     display: block;
-    margin-top: 70px;
+    margin-left: 35px;
 }
-.spisok{}
-.spisok1{
+.point-3 {
+    display: block;
+    margin-left: 35px;
+}
+.offer {
+    display: block;
+    width: 404px;
+    margin-top: 92px;
+    margin-left: 37px;	
+}
+.spisok {
+	width: 404px
+    margin-top: 37px;	
+}
+.spisok1 {
 	display: inline-block;
 	vertical-align: top;
-    margin-left: 30px;
-	width: 200px;
-}
-.spisok2{
-	display: inline-block;
-	vertical-align: top;
+    margin-left: 24px;
+    line-height: 25px;
 
-	width: 200px;
+}
+.spisok2 {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 25px;
+
 }
