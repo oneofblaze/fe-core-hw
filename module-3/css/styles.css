@@ -1,7 +1,9 @@
-body {
-	width: 480px;
-	margin: 0;
+
+.ramka {
+    width: 480px;
+    
 }
+
 @font-face {
     font-family: 'pathway_gothic_oneregular';
     src: url('../fonts/pathwaygothicone-regular-webfont.eot');
@@ -18,7 +20,7 @@ h2 {
     font-family: 'pathway_gothic_oneregular', Arial, sans-serif;
     font-size: 25px;
     font-weight: normal;
-    color: rgba(38, 53, 85, 255);
+    color: #263555;
     text-align: left;
 }
 
@@ -26,21 +28,21 @@ p {
     font-family: Arial, sans-serif;
     font-size: 12px;
     line-height: 17px;
-    color: rgba(78, 80, 80, 255);
+    color: #4e5050;
     text-align: left;
 }
 
-.text {
+.bold-text {
     font-size: 14px;
     line-height: 19px;
     font-weight: 500;
-    color: rgba(38, 53, 85, 255);
+    color: #263555;
 }
 span {
-	font-family: ﻿Arial, sans-serif;
+	font-family: Arial, sans-serif;
     font-size: 12px;
     font-weight: bold;
-    color: rgba(38, 53, 85, 255);
+    color: #263555;
     text-align: left;
 }
 img {
@@ -53,33 +55,22 @@ li {
     list-style-type: none;
 }    
 .wrapper {
-	display: block;
-	width: 403px;
+	width: 406px;
 	margin-top: 59px;
     margin-left: 37px;	
 	
 }
 .principles {
-    display: block;
     width: 403px;
     margin-top: 50px;
     margin-left: 37px;	
 	
 }
-.point-1 {
-    display: block;
+.point {
     margin-left: 35px;
 }
-.point-2 {
-    display: block;
-    margin-left: 35px;
-}
-.point-3 {
-    display: block;
-    margin-left: 35px;
-}
+
 .offer {
-    display: block;
     width: 404px;
     margin-top: 92px;
     margin-left: 37px;	
@@ -99,5 +90,4 @@ li {
 	display: inline-block;
 	vertical-align: top;
 	line-height: 25px;
-
 }
