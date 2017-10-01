@@ -1,9 +1,4 @@
 
-.ramka {
-    width: 480px;
-    
-}
-
 @font-face {
     font-family: 'pathway_gothic_oneregular';
     src: url('../fonts/pathwaygothicone-regular-webfont.eot');
@@ -14,6 +9,15 @@
          url('../fonts/pathwaygothicone-regular-webfont.svg#pathway_gothic_oneregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+.wrapper {
+    width: 480px;
+    margin: 0 auto;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0 0 10px #A9A9A9;
+    border-radius: 5px;
+    
 }
 
 h2 {
@@ -38,34 +42,38 @@ p {
     font-weight: 500;
     color: #263555;
 }
+
 span {
-	font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 12px;
     font-weight: bold;
     color: #263555;
     text-align: left;
 }
-img {
-	display: block;
-    width: 406px;
-	margin-top: 32px;
-}
+
 
 li {
     list-style-type: none;
-}    
-.wrapper {
-	width: 406px;
-	margin-top: 59px;
-    margin-left: 37px;	
-	
 }
+
+.profile {
+    width: 406px;
+    margin-top: 59px;
+    margin: 37px;
+}
+
+img {
+    display: block;
+    width: 406px;
+    margin-top: 32px;
+}
+
 .principles {
     width: 403px;
     margin-top: 50px;
     margin-left: 37px;	
-	
 }
+
 .point {
     margin-left: 35px;
 }
@@ -75,19 +83,22 @@ li {
     margin-top: 92px;
     margin-left: 37px;	
 }
+
 .spisok {
-	width: 404px
+    width: 404px
     margin-top: 37px;	
 }
+
 .spisok1 {
-	display: inline-block;
-	vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
     margin-left: 24px;
     line-height: 25px;
 
 }
+
 .spisok2 {
-	display: inline-block;
-	vertical-align: top;
-	line-height: 25px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 25px;
 }
