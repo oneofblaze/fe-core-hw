@@ -43,23 +43,9 @@ p {
     color: #263555;
 }
 
-span {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    color: #263555;
-    text-align: left;
-}
-
-
-li {
-    list-style-type: none;
-}
-
 .profile {
     width: 406px;
-    margin-top: 59px;
-    margin: 37px;
+    margin: 59px 0 0 37px;
 }
 
 img {
@@ -70,8 +56,7 @@ img {
 
 .principles {
     width: 403px;
-    margin-top: 50px;
-    margin-left: 37px;	
+    margin: 50px 0 0 37px;	
 }
 
 .point {
@@ -80,13 +65,17 @@ img {
 
 .offer {
     width: 404px;
-    margin-top: 92px;
-    margin-left: 37px;	
+    margin: 92px 0 0 37px;	
 }
 
 .spisok {
-    width: 404px
-    margin-top: 37px;	
+    width: 420px;
+    margin-top: 37px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #263555;
+    text-align: left;    
 }
 
 .spisok1 {
@@ -101,4 +90,8 @@ img {
     display: inline-block;
     vertical-align: top;
     line-height: 25px;
+}
+
+li {
+    list-style-type: none;    
 }
