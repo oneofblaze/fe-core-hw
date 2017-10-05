@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: 'pathway_gothic_oneregular';
+    src: url('../fonts/pathwaygothicone-regular-webfont.eot');
+    src: url('../fonts/pathwaygothicone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pathwaygothicone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pathwaygothicone-regular-webfont.woff') format('woff'),
+         url('../fonts/pathwaygothicone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/pathwaygothicone-regular-webfont.svg#pathway_gothic_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0 0 10px #A9A9A9;
+    border-radius: 5px;
+    
+}
+
+h2 {
+    margin: 0;
+    font-family: 'pathway_gothic_oneregular', Arial, sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #263555;
+    text-align: left;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    color: #4e5050;
+    text-align: left;
+}
+
+.bold-text {
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 500;
+    color: #263555;
+}
+
+.header {
+    padding: 0;
+}
+.profile {
+    display: inline-block;
+    width: 640px;
+    margin: 117px 0 0 61px;
+    vertical-align: top
+}
+.profile>.bold-text {
+    margin: 48px 0 0 0;
+}
+
+img {
+    width: 360px;
+    margin-top: 48px;
+    margin: 48px 24px 0 0 ;
+    float: left;
+}
+
+.principles {
+    display: inline-block;
+    width: 200px;
+    margin: 117px 0 0 58px;
+    vertical-align: top
+}
+
+.point {
+    margin-left: 38px;
+}
+
+.footer {
+    padding: 0;
+}    
+    
+.offer {
+    display: inline-block;
+    vertical-align: top;
+    width: 640px;
+    margin: 113px 0 0 61px;	
+}
+
+
+.spisok {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    line-height: 30px;    
+    font-weight: 500;
+    color: #263555;
+    margin: 33px 0 0 0;
+}
+
+.spisok1, .spisok2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+li {
+    list-style-image: url('../arrows.png');    
+}
+
+.testimonial {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    margin: 113px 0 0 50px;
+}
+
+.blockquote {
+    width: 211px;
+    height: 219px;
+    padding: 21px;
+    margin: 23px 0 0 0;
+    border: 2px solid #dedbdb;
+    background-color: #fcfafa;
+}
+
+.testimonial >p {
+    text-align: center;
+}
+.blockquote > .bold-text::before {
+	content: "\201c";
+}
+.blockquote > .bold-text::after {
+	content: "\201d";
+}
