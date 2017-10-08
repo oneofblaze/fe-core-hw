@@ -1,29 +1,21 @@
 @font-face {
     font-family: 'pathway_gothic_oneregular';
     src: url('../fonts/pathwaygothicone-regular-webfont.eot');
-    src: url('../fonts/pathwaygothicone-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pathwaygothicone-regular-webfont.woff2') format('woff2'),
-         url('../fonts/pathwaygothicone-regular-webfont.woff') format('woff'),
-         url('../fonts/pathwaygothicone-regular-webfont.ttf') format('truetype'),
-         url('../fonts/pathwaygothicone-regular-webfont.svg#pathway_gothic_oneregular') format('svg');
+    src: url('../fonts/pathwaygothicone-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pathwaygothicone-regular-webfont.woff2') format('woff2'), url('../fonts/pathwaygothicone-regular-webfont.woff') format('woff'), url('../fonts/pathwaygothicone-regular-webfont.ttf') format('truetype'), url('../fonts/pathwaygothicone-regular-webfont.svg#pathway_gothic_oneregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
 body {
     width: 1920px;
     background-image: url(../page-bg.jpg);
     background-size: avto;
-    
 }
-
 .wrapper {
     background-color: #fff;
     width: 1024px;
     margin: 230px auto;
     border: 1px solid #f9fcfe;
 }
-
 h2 {
     font-family: 'pathway_gothic_oneregular', Arial, sans-serif;
     font-size: 32px;
@@ -32,7 +24,6 @@ h2 {
     color: #263555;
     text-align: left;
 }
-
 p {
     font-family: Arial, sans-serif;
     font-size: 13px;
@@ -40,9 +31,7 @@ p {
     color: #4e5050;
     text-align: left;
     margin-top: 14px;
-
 }
-
 .bold-text {
     font-size: 15px;
     line-height: 19px;
@@ -50,7 +39,6 @@ p {
     color: #263555;
     margin-top: 0;
 }
-
 .header {
     padding: 0;
 }
@@ -63,20 +51,17 @@ p {
 .profile>.bold-text {
     margin: 48px 0 0 0;
 }
-
 img[title="White_plane"] {
     width: 360px;
-    margin: 48px 24px 0 0 ;
+    margin: 48px 24px 0 0;
     float: left;
 }
-
 .principles {
     display: inline-block;
     width: 210px;
     margin: 117px 0 0 58px;
     vertical-align: top
 }
-
 .point {
     margin: 48px 0 0 38px;
 }
@@ -84,14 +69,12 @@ ol {
     counter-reset: li; /* Устанавливает идентификатор */
     list-style: none; /* Удаляем стандартную нумерацию */
 }
-
 .rounded-list li {
     position: relative;
     display: block;
     margin: 32px 0 0 0;
 }
-
-.rounded-list li:before{
+.rounded-list li:before {
     content: counter(li);
     counter-increment: li;
     position: absolute;
@@ -105,54 +88,46 @@ ol {
     text-align: center;
     border-radius: 15px;
 }
-
 .line {
-    width: 900px; /* ширина линии */
-    height: 1px; /* высота / толщина линии */
-    background: #dedbdb; /* фон / цвет линии */
+    width: 900px;   /* ширина линии */
+    height: 1px;    /* высота / толщина линии */
+    background: #dedbdb;    /* фон / цвет линии */
     border: 0;
     margin: 54px 0 0 61px;
 }
 .footer {
     padding: 0;
-}    
-    
+}
 .offer {
     display: inline-block;
     vertical-align: top;
     width: 640px;
-    margin: 58px 0 0 61px;	
+    margin: 58px 0 0 61px;
 }
 .offer>.bold-text {
     margin: 66px 0 0 0;
 }
-
-
 .spisok {
     font-family: Arial, sans-serif;
     font-size: 15px;
     text-align: left;
-    line-height: 40px;    
+    line-height: 40px;
     font-weight: 500;
     color: #263555;
     column-count: 2;
     margin: 33px 0 0 24px;
 }
-
-ul> li::before {
+ul>li::before {
     content: "\2192  ";
     color: #38afe5;
-    
 }
-
 .testimonial {
     display: inline-block;
     vertical-align: top;
     width: 220px;
     margin: 58px 0 0 50px;
 }
-
-.speech-bubble  {
+.speech-bubble {
     position: relative;
     width: 168px;
     height: 148px;
@@ -177,23 +152,21 @@ ul> li::before {
     position: absolute;
     bottom: -26px;
     left: 90px;
-    border-width: 30px 15px 0;    
+    border-width: 30px 15px 0;
     border-style: solid;
     border-color: #fcfafa transparent;
     display: block;
     width: 0;
-}  
-
-.testimonial >p {
+}
+.testimonial>p {
     text-align: center;
 }
-.speech-bubble  > .bold-text::before {
-	content: "\201c";
+.speech-bubble>.bold-text::before {
+    content: "\201c";
 }
-.speech-bubble  > .bold-text::after {
-	content: "\201d";
+.speech-bubble>.bold-text::after {
+    content: "\201d";
 }
-
 .testimonial>.bold-text {
     margin: 66px 0 0 0;
 }
