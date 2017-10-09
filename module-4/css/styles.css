@@ -82,6 +82,7 @@ ol {
     left: -45px;
     top: 5px;
     background: #38afe5;
+    color: #fff;
     height: 30px;
     width: 30px;
     line-height: 30px;
@@ -105,7 +106,7 @@ ol {
     margin: 58px 0 0 61px;
 }
 .offer>.bold-text {
-    margin: 66px 0 0 0;
+    margin: 66px 0 0 0; /* Отступ от заголовка */
 }
 .spisok {
     font-family: Arial, sans-serif;
@@ -159,7 +160,7 @@ ul>li::before {
     width: 0;
 }
 .testimonial>p {
-    text-align: center;
+    text-align: center;  /* Центрирование текста для текста под цитатой */
 }
 .speech-bubble>.bold-text::before {
     content: "\201c";
@@ -168,7 +169,7 @@ ul>li::before {
     content: "\201d";
 }
 .testimonial>.bold-text {
-    margin: 66px 0 0 0;
+    margin: 66px 0 0 0;  /* Отступ от заголовка */
 }
 .testimonial>p {
     margin: 20px 0 0 0;
