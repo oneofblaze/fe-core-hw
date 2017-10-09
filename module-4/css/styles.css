@@ -8,7 +8,7 @@
 body {
     width: 1920px;
     background-image: url(../page-bg.jpg);
-    background-size: avto;
+    background-size: auto;
 }
 .wrapper {
     background-color: #fff;
@@ -97,7 +97,7 @@ ol {
     margin: 54px 0 0 61px;
 }
 .footer {
-    padding: 0;
+    width: auto;
 }
 .offer {
     display: inline-block;
