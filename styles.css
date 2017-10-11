@@ -8,6 +8,7 @@
 .square li {
   position: relative;
   margin: 0 0 10px 2em;
+  margin: 0 0 10px 32px;
   padding: 4px 8px;
   border-top: 2px solid #787A77;
   transition: .3s linear;
@@ -18,8 +19,8 @@
   counter-increment: li;
   position: absolute;
   top: -2px;
-  left: -2em;
-  width: 2em;
+  left: -32px;
+  width: 32px;
   box-sizing: border-box;
   margin-right: 8px;
   padding: 4px;
@@ -33,10 +34,10 @@
   text-align: center;
   transition: .3s linear;
 }
-.square li:hover {border-top: 2px solid #389F70;}
+.square li:hover {border-top: 2px solid #8B0000;}
 .square li:hover:before {
-  border: 2px solid #389F70;
-  background: #98EABA;
+  border: 2px solid #8B0000;
+  background: #E9967A;
 }
 h1 {
   background-color: #B0C4DE;
@@ -45,5 +46,5 @@ h1 {
 .text {
   text-align: center;
   font-size: 12px;
-  color: dimgray;
+  color: #696969;
 }
