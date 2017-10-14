@@ -1,0 +1,237 @@
+body {
+    width: 1920px;
+    height: 2112px;
+    background-image: url(../img/page-bg.jpg);
+}
+nav {
+    height: 235px;
+}
+
+.logo {
+    position: relative;
+    top: 46px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 138px;
+    height: 138px;
+    text-align: center;
+    line-height: 138px;
+    font-size: 60px;
+    font-family: "Dorsa", sans-serif;
+    background-color: #fff;
+    border-radius: 50%;
+} 
+
+.menu {
+    position: relative;
+    list-style: none; /* отменяем маркеры*/
+    font-size: 28px;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase;    
+}
+
+.menu_item {
+    position: relative;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.menu_item > a {
+    text-decoration: none;
+    text-transform: uppercase;   
+    color: #fff;
+}
+.menu_item:nth-child(-n+3) {
+    top: -40px;
+	left: 500px;
+}
+
+.menu_item:nth-child(n+4) {
+    top: -40px;
+	left: 700px;
+}
+
+.submenu {
+    display: none;   /* делаем невидимым .submenu */
+    position: absolute; /* при появлении .submenu окажется поверх других элементов */
+    top: 40px;
+    width: 66px;
+    height: 88px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #fff;
+
+}
+.submenu::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 28px;
+    border-width:0 5px 5px 5px;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+.submenu_item > a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;   
+    color: #6b7488;
+}
+
+.menu_item>a:hover {
+    color: #263555;
+}
+
+.menu_item:hover > .submenu { /* делаем .submenu видимым */
+    display: block;
+}
+    
+main {
+    width: 1024px;
+    height: 1171px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #f9fcfe;
+}
+
+.box {
+    position: relative;
+    margin: 58px 61px 0 61px;
+    width: 902px;
+    height: 579px;
+    background-image: url(../img/Layer-01.jpeg);    
+}
+.box-1 {
+    position: absolute;
+    top: 218px;
+    width: 225px;
+    height: 61px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 61px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #263555;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase;
+}
+.box-2 {
+    position: absolute;
+    top: 278px;
+    width: 275px;
+    height: 60px;
+    background-color: #38afe5;
+    text-align: center;
+    line-height: 60px;
+    font-size: 34px;
+    color: #fff;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase;
+}
+
+.slider-left {
+    position: absolute;
+    top: 450px;
+    left: 37px;    
+	display: inline-block;
+	background-color: #39afe5;
+	height: 90px;
+	width: 45px;
+	border-radius: 45px 0 0 45px;
+}
+.slider-right {
+    position: absolute;
+    top: 450px;
+    left: 82px; 
+	background-color: #39afe5;
+	height: 90px;
+	width: 45px;
+	border-radius: 0 45px 45px 0;
+	position: absolute;
+
+}
+.slider-left:before {
+	content: "\2190";
+	color: white;
+	position: absolute;
+	right: 4px;
+	top: 36px;
+}
+.slider-right:before {
+	content: "\2192";
+	color: white;
+	position: absolute;
+	left: 4px;
+	top: 36px;
+}
+.slider-left:hover, .slider-right:hover {
+	background-color: rgba(56, 125, 179, 0.85);
+}
+.cards {
+    margin: 57px 61px 0 61px;
+}
+h2 {
+    font-size: 30px;
+    color: #263555;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase;
+}
+
+.img {
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+    width: 900px;
+    height: 270px;
+    margin-top: 48px;
+}
+
+.opisanie {
+    display: none;    /*делаем невидимым */
+    position: absolute; /* при появлении окажется поверх других элементов */
+    top: 1px;
+    width: 147px;
+    height: 270px;
+    background-color: #193149;    
+}
+
+p {
+    margin: 23px 8px 0 8px;
+    font-size: 10px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+
+}
+.bold {
+    margin-top: 21px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Arial", "Courier", sans-serif;
+}
+.button {
+    margin: 30px 0 0 75px;
+    text-align: center;
+    line-height: 22px;
+    width: 63px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: #fcf6f8;
+    
+}
+.img:hover > .opisanie { /* делаем видимым */
+    display: block;
+
+}
+.to-top {
+    position: fixed;
+    bottom: 15px;
+    left: 1430px;
+    width: 30px;
+    height: 30px;
+} 
+
+
+
