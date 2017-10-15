@@ -1,49 +1,58 @@
 .square {
-  margin: 0;
-  counter-reset: li;
-  list-style: none;
-  background: #B0C4DE;
-  padding: 10px;
+	margin: 0;
+	counter-reset: li;
+	list-style: none;
+	background: #B0C4DE;
+	padding: 10px;
 }
 .square li {
-  position: relative;
-  margin: 0 0 10px 32px;
-  padding: 4px 8px;
-  border-top: 2px solid #787A77;
-  transition: .3s linear;
+	position: relative;
+	margin: 0 0 10px 32px;
+	padding: 4px 8px;
+	border-top: 2px solid #787A77;
+	transition: .3s linear;
 }
-.square li:last-child {margin-bottom: 0;}
+.square li:last-child {
+	margin-bottom: 0;
+}
 .square li:before {
-  content: counter(li);
-  counter-increment: li;
-  position: absolute;
-  top: -2px;
-  left: -32px;
-  width: 32px;
-  box-sizing: border-box;
-  margin-right: 8px;
-  padding: 4px;
-  border-top: 2px solid #787A77;
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
-  border-bottom: 2px solid transparent;
-  background: #787A77;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  transition: .3s linear;
+	content: "Modul-" counter(li);
+	counter-increment: li;
+	position: absolute;
+	top: -2px;
+	left: -32px;
+	width: 72px;
+	box-sizing: border-box;
+	margin-right: 8px;
+	padding: 4px;
+	border-top: 2px solid #787A77;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	background: #787A77;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	transition: .3s linear;
 }
-.square li:hover {border-top: 2px solid #8B0000;}
+.square li:hover {
+	border-top: 2px solid #8B0000;
+}
 .square li:hover:before {
-  border: 2px solid #8B0000;
-  background: #E9967A;
+	border: 2px solid #8B0000;
+	background: #E9967A;
 }
 h1 {
-  background-color: #B0C4DE;
-  text-align: center;
+	background-color: #B0C4DE;
+	text-align: center;
 }
 .text {
-  text-align: center;
-  font-size: 12px;
-  color: #696969;
+	text-align: center;
+	font-size: 12px;
+	color: #696969;
+}
+a>img {
+	margin-left: 50px;
+	height: 100px;
+	border-color: black;
 }

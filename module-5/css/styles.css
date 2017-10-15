@@ -33,7 +33,7 @@ nav {
 .menu_item {
     position: relative;
     display: inline-block;
-    margin: 0 30px;
+    margin: 0 29px;
 }
 
 .menu_item > a {
@@ -172,7 +172,7 @@ main {
 	background-color: rgba(56, 125, 179, 0.85);
 }
 .cards {
-    margin: 57px 61px 0 61px;
+    margin: 58px 61px 0 61px;
 }
 h2 {
     font-size: 30px;
@@ -183,16 +183,20 @@ h2 {
 
 .img {
     display: inline-block; /* Строчно-блочный элемент */
-    position: relative; /* Относительное позиционирование */
+    position: relative;
     width: 900px;
     height: 270px;
     margin-top: 48px;
 }
 
+.img > .second {
+    margin: 0 14px 0 14px;
+}
+
 .opisanie {
-    display: none;    /*делаем невидимым */
+    display: none; /*делаем невидимым */
     position: absolute; /* при появлении окажется поверх других элементов */
-    top: 1px;
+    top: 0px;
     width: 147px;
     height: 270px;
     background-color: #193149;    
@@ -205,12 +209,14 @@ p {
     font-family: "Open Sans", sans-serif;
 
 }
+
 .bold {
     margin-top: 21px;
     text-align: center;
     font-size: 30px;
     font-family: "Arial", "Courier", sans-serif;
 }
+
 .button {
     margin: 30px 0 0 75px;
     text-align: center;
@@ -221,17 +227,20 @@ p {
     background-color: #fcf6f8;
     
 }
-.img:hover > .opisanie { /* делаем видимым */
+
+.img:hover >.opisanie { /* делаем описание видимым */
     display: block;
 
 }
+
 .to-top {
     position: fixed;
-    bottom: 15px;
-    left: 1430px;
+    bottom: 20px;
+    left: 1425px;
     width: 30px;
     height: 30px;
 } 
+
 
 
 
