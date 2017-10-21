@@ -111,11 +111,11 @@ p {
     margin-top: 14px;
 }
 .bold-text {
+    margin: 0;
     font-size: 15px;
     line-height: 19px;
     font-weight: 500;
     color: #263555;
-    margin-top: 0;
 }
 .header {
     display: flex;
@@ -123,16 +123,16 @@ p {
 }
 .profile {
     display: inline-block;
-    width: 640px;
+    width: 645px;
     margin: 117px 0 0 61px;
     vertical-align: top
 }
 .profile>.bold-text {
-    margin: 48px 0 0 0;
+    margin: 46px 0 0 0;
 }
 img[title="White_plane"] {
     width: 360px;
-    margin: 48px 24px 0 0;
+    margin: 49px 24px 0 0;
     float: left;
 }
 .principles {
@@ -142,7 +142,7 @@ img[title="White_plane"] {
     vertical-align: top
 }
 .point {
-    margin: 48px 0 0 38px;
+    margin: 46px 0 0 38px;
 }
 ol {
     counter-reset: li; /* Устанавливает идентификатор */
@@ -151,7 +151,7 @@ ol {
 .rounded-list li {
     position: relative;
     display: block;
-    margin: 32px 0 0 0;
+    margin: 30px 0 0 0;
 }
 .rounded-list li:before {
     content: counter(li);
@@ -159,7 +159,7 @@ ol {
     position: absolute;
     border-color: 1px solid #263555;
     left: -45px;
-    top: 5px;
+    top: 10px;
     background: #38afe5;
     color: #fff;
     height: 30px;
@@ -173,7 +173,7 @@ ol {
     height: 1px;    /* высота / толщина линии */
     background: #dedbdb;    /* фон / цвет линии */
     border: 0;
-    margin: 54px 0 0 61px;
+    margin: 45px 0 0 61px;
 }
 .footer {
     display: flex;
@@ -184,10 +184,10 @@ ol {
     display: inline-block;
     vertical-align: top;
     width: 640px;
-    margin: 58px 0 0 61px;
+    margin: 55px 0 0 61px;
 }
 .offer>.bold-text {
-    margin: 66px 0 0 0; /* Отступ от заголовка */
+    margin: 60px 0 0 0; /* Отступ от заголовка */
 }
 .spisok {
     font-family: Arial, sans-serif;
@@ -197,7 +197,7 @@ ol {
     font-weight: 500;
     color: #263555;
     column-count: 2;
-    margin: 33px 0 0 24px;
+    margin: 30px 0 0 24px;
 }
 .spisok>li::before {
     content: "\2192  ";
@@ -207,7 +207,7 @@ ol {
     display: inline-block;
     vertical-align: top;
     width: 220px;
-    margin: 58px 0 0 50px;
+    margin: 55px 0 0 50px;
 }
 .speech-bubble {
     position: relative;
@@ -218,6 +218,7 @@ ol {
     border: 2px solid #dedbdb;
     background-color: #fcfafa;
 }
+
 .speech-bubble:before {
     content: "";
     position: absolute;
@@ -258,33 +259,106 @@ ol {
 
 
 .bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    
     width: 1024px;
     height: 135px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #30455b;
 }
-
 .link {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    width: 120px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
     line-height: 19px;
     color: #fff;
-    text-align: left;
+    
+}
+
+.link_item > a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+.social_networks {
+    width: 200px;
+    height: 50px;
+    margin: 26px auto;
+    display: flex;
+}
+
+.nav {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav_item>a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+.nav_item:nth-of-type(1) >a {
+  background-image: url(../img/css_sprites.png);
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+  filter: opacity(.7);
+}
+
+.nav_item:nth-of-type(2)>a {
+  background-image: url(../img/css_sprites.png);
+  background-repeat: no-repeat;
+  background-position: -70px -10px;
+  filter: opacity(.7);
+}
+
+.nav_item:nth-of-type(3)>a {
+  background-image: url(../img/css_sprites.png);
+  background-repeat: no-repeat;
+  background-position: -130px -10px;
+  filter: opacity(.7);
+}
+
+.nav_item:nth-of-type(4)>a {
+  background-image: url(../img/css_sprites.png);
+  background-repeat: no-repeat;
+  background-position: -190px -10px;
+  filter: opacity(.7);
+}
+
+.nav_item>a:hover {
+  filter: opacity(1);
+}
+
+.privacy {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
 }
 
 .to-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     left: 1425px;
     width: 30px;
     height: 30px;
 } 
-
-
-
-
