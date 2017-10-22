@@ -103,7 +103,7 @@ h2 {
     color: #263555;
     text-align: left;
 }
-.img {
+.gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -113,6 +113,22 @@ h2 {
     width: 902px;
     height: 682px;
 }
+
+.image {
+	overflow:hidden;
+	width: 288px;
+    height: 154px;
+}
+
+.image > img {
+    transition: all 1s ease-out;
+ }
+
+.image > img:hover{
+    transform: scale(1.1);
+	filter: brightness(65%);
+	cursor: url(../img/icon-01.png), pointer;
+ }
 
 .bottom {
     width: 1024px;

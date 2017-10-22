@@ -104,11 +104,11 @@ h3 {
 }
 p {
     font-family: Arial, sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 15px;
     color: #4e5050;
-    text-align: left;
-	margin-top: 21px;
+    text-align: justify;
+	margin-top: 18px;
 
 }
 .bold-text {
@@ -139,14 +139,14 @@ section {
     display: flex;
     flex-direction: column;
 	width: 635px;
-    margin: 99px 0 0 62px;
+    margin: 96px 0 0 62px;
 }
 
 .box {
 	display: flex;
     flex-direction: row;
 	width: 100%;
-	margin: 46px 0 17px 0;
+	margin: 46px 0 14px 0;
 }
 .data {	
 	width: 31px;
@@ -180,10 +180,10 @@ img {
     margin: 18px auto;
 	font-size: 12px;
     text-align: center;
-    line-height: 22px;
+    line-height: 20px;
     width: 64px;
-    height: 22px;
-    border-radius: 4px;
+    height: 20px;
+    border-radius: 6px;
 	border: 1px solid #b2abab;
     background-color: #fbf6f8;
 }
@@ -195,11 +195,11 @@ img {
 
 
 .line {
-    width: 900px;   /* ширина линии */
+    width: 672px;   /* ширина линии */
     height: 1px;    /* высота / толщина линии */
     background: #dedbdb;    /* фон / цвет линии */
     border: 1px;
-    margin: 40px 0 0 61px;
+    margin: 18px 0 0 0;
 }
 
 
