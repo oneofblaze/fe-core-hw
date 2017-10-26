@@ -1,0 +1,317 @@
+body {
+    width: 1920px;
+    background-image: url(../img/page-bg-7.jpg);
+}
+
+/*START menu CSS*/
+
+.menu {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1024px;
+    height: 230px;
+}
+.logo {
+    width: 138px;
+    height: 138px;
+    text-align: center;
+    line-height: 138px;
+    background-color: #fff;
+    border-radius: 50%;
+} 
+.logo > a {
+    text-decoration: none;
+    font-size: 60px;
+    font-family: "Dorsa", sans-serif;
+    color: #263555;
+    text-transform: uppercase;
+}
+.menu_item > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase; 
+    color: #fff;
+}
+.submenu {
+    display: none;   /* делаем невидимым .submenu */
+    position: absolute; /* при появлении .submenu окажется поверх других элементов */
+    top: 135px;
+    width: 66px;
+    height: 88px;
+    border-radius: 3px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase; 
+    background-color: #fff;
+
+}
+.submenu::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 28px;
+    border-width:0 5px 5px 5px;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+.submenu_item > a {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;   
+    color: #6b7488;
+}
+.menu_item>a:hover {
+    color: #263555;
+}
+.menu_item:hover > .submenu { /* делаем .submenu видимым */
+    display: block;
+}
+
+/*END menu CSS*/
+
+main {
+    display: flex;
+    flex-direction: row;
+	justify-content: flex-start;
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #f9fcfe;
+}
+
+.contacts {
+	margin: 98px 0 130px 60px;
+	display: flex;
+    flex-direction: column;
+	width: 685px;
+
+}
+article {
+    display: flex;
+    flex-direction: row;
+    width: 660px;
+
+}
+h2 {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #263555;
+    text-align: left;
+}
+.map {
+	margin: 48px 0 0 0;
+    width: 442px;
+    height: 414px;
+}
+.adress {
+	display: flex;
+	flex-direction: column;
+	margin: 48px 0 0 20px;
+
+}
+table {
+	margin: 0 0 50px 0;
+	width: 210px;
+	font-family: Arial, sans-serif;
+    font-size: 13px;
+	line-height: 19px;
+    color: #666565;
+    text-align: left;
+}
+caption {
+	width: 132px;
+	margin: 0 0 20px 0;
+	font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #666565;
+	text-align:justify;	
+}
+td>span {
+	color: #fa7e7e;
+}
+aside {
+	margin: 98px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+	margin: 48px 0 0 0;
+	display: flex;
+    flex-direction: column;
+
+}
+label {
+	margin: 0 0 17px 0;
+	display: block;
+    position: relative;
+
+}
+input {
+    display: block;
+	width: 212px;
+	height: 28px;
+    font-size: 13px;
+    color: #263555;
+	line-height: 26px;
+	text-indent: 10px;
+    text-transform: uppercase;
+    background-color: rgba(193, 187, 187, 0.05);
+	border: 1px solid #c1bbbb;
+}
+input::placeholder {
+	color: #263555; !important;
+}
+textarea {
+    display: block;
+	width: 212px;
+	height: 232px;
+    font-size: 15px;
+    color: #263555;
+	line-height: 26px;
+	text-indent: 10px;
+	padding: 0;
+    text-transform: uppercase;
+    background-color: rgba(193, 187, 187, 0.05);
+	border: 1px solid #c1bbbb;
+}
+textarea::placeholder {
+	color: #263555; !important;
+}
+.error {
+    color: red;
+	font-size: 11px;	
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+	font-size: 15px;
+	line-height: 15px;
+}
+button {
+	font-size: 15px;
+	line-height: 15px;
+	width: 78px;
+	height: 26px;
+	margin-left: 20px;
+	border: 1px solid #c1bbbb;
+	border-radius: 5px;
+	background-color: rgba(193, 187, 187, 0.05);
+}
+
+
+/*START bottom + footer + social networks links CSS*/
+
+.bottom {
+    width: 1026px;
+    height: 135px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #30455b;
+}
+.link {
+    width: 120px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 19px;
+    color: #fff;
+    
+}
+.link_item > a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+.social_networks {
+    width: 200px;
+    height: 50px;
+    margin: 26px auto;
+    display: flex;
+}
+.nav {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav_item>a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+.nav_item:nth-of-type(1) >a {
+  background-image: url(../img/css_sprites.png);
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+  filter: opacity(.7);
+}
+.nav_item:nth-of-type(2)>a {
+  background-image: url(../img/css_sprites.png);
+  background-repeat: no-repeat;
+  background-position: -70px -10px;
+  filter: opacity(.7);
+}
+.nav_item:nth-of-type(3)>a {
+  background-image: url(../img/css_sprites.png);
+  background-repeat: no-repeat;
+  background-position: -130px -10px;
+  filter: opacity(.7);
+}
+.nav_item:nth-of-type(4)>a {
+  background-image: url(../img/css_sprites.png);
+  background-repeat: no-repeat;
+  background-position: -190px -10px;
+  filter: opacity(.7);
+}
+.nav_item>a:hover {
+  filter: opacity(1);
+}
+.privacy {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+	margin-bottom: 20px;
+}
+.to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 1427px;
+    width: 30px;
+    height: 30px;
+}
