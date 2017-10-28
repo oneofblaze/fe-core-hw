@@ -1,6 +1,7 @@
 body {
     width: 1920px;
     background-image: url(../img/page-bg-7.jpg);
+	background-repeat: no-repeat;
 }
 
 /*START menu CSS*/
@@ -89,7 +90,6 @@ main {
     background-color: #fff;
     border: 1px solid #f9fcfe;
 }
-
 .box {
 	display: flex;
 	flex-direction: column;
@@ -125,7 +125,6 @@ main {
     font-family: "Pathway Gothic One", sans-serif;
     text-transform: uppercase;
 }
-
 .slider-left {
     position: absolute;
     top: 450px;
@@ -167,7 +166,7 @@ main {
 .destinations {
 	display: flex;
 	flex-direction: column;
-    margin: 58px 61px 0 61px;
+    margin: 56px 61px 0 61px;
 }
 h2 {
     font-size: 30px;
@@ -175,56 +174,221 @@ h2 {
     font-family: "Pathway Gothic One", sans-serif;
     text-transform: uppercase;
 }
-.img-box {
+h3 {
+	font-size: 19px;
+    color: #263555;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase;
+}
+p {
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.img-box-row {
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-    margin-top: 48px;
+    margin-top: 46px;
 }
 
-.image {
+.img-box {
 	position: relative;
+	overflow:hidden;
 	width: auto;
 	height: auto;
 }
 
-.opisanie {
-    display: none; делаем невидимым 
-    position: absolute; /* при появлении окажется поверх других элементов */
+.description {
+	visibility: hidden;
+    position: absolute;
     top: 0px;
+	left: -150px;
     width: 147px;
     height: 270px;
-    background-color: #193149;    
+    background-color: #193149;
+	transition: all 0.75s ease-in-out;
 }
-p {
-    margin: 23px 8px 0 8px;
-    font-size: 10px;
+.description>p {
+	margin: 23px 8px 0 8px;
+	line-height: 15px;
 	color: #fff;
-    font-family: "Open Sans", sans-serif;
 }
-.bold {
-    margin-top: 21px;
-    text-align: center;
+.city-name {
+	margin-top: 21px;
     font-size: 30px;
+    text-align: center;
+	font-family: "Pathway Gothic One", sans-serif;
+	text-transform: uppercase;
 	color: #fff;
-    font-family: "Arial", "Courier", sans-serif;
 }
-.button {
+.box-button {
     margin: 30px 0 0 75px;
     text-align: center;
     line-height: 22px;
     width: 63px;
     height: 22px;
     border-radius: 3px;
-    background-color: #fcf6f8;    
+    background-color: #fcf6f8;
+}
+.box-button>a {
+	text-decoration: none;
+	color: black;
 }
 
-div.image:hover >.opisanie { /* делаем описание видимым */
-    display: block;
+.img-box:hover >.description {
+	visibility:visible;
+	transform: translateX(150px);
+	
+}
+.img-box:hover > .image-left {
+	transition-duration: 1s;
+	transform: scale(1.1);
+	filter: brightness(60%);	
+}
+.img-box:hover > .image-center {
+	transition-duration: 1s;
+	transform: scale(1.1);
+	filter: brightness(70%);	
+}
+.img-box:hover > .image-right  {
+    transition-duration: 1s;
+	transform: scale(1.1);
+	filter: brightness(70%);	
+}
+.deals {
+	display: flex;
+	flex-direction: row;
+	margin: 55px 61px 78px 61px;
+}
+.tabs {
+	width: 596px;
+}
+.tabs>input {
+	display:none;
+}
+.tabs>div {
+	display: none;
+    border: 1px solid #dedbdb;
+}
+.tabs>label {
+    display: inline-block;
+    padding: 8px 35px;
+    margin: 0 -5px -1px 0;
+    text-align: center;
+    border: 1px solid #dedbdb;
+	background: #fcfafa;
+    cursor: pointer;
+}
+.tabs>input:checked + label {
+    border: 1px solid #dedbdb;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+.tabs>input:checked + label>h3 { /*два часа убил на эту комбинацию*/
+    color: #38afe5;
+}
+#tab_1:checked ~ #box_1,
+#tab_2:checked ~ #box_2,
+#tab_3:checked ~ #box_3 {
+	display: block;
 }
 
+#box_1 #box_2 #box_3 {
+	display: flex;
+	flex-direction: column;	
+}
+.bookmark-top {
+	display: flex;
+	flex-direction: row;
+	margin: 41px 19px 0 15px;
+}
+.bookmark-bottom {
+	display: flex;
+	flex-direction: row;
+	margin: 15px 19px 0 15px;
+}
+.bookmark-top>img, .bookmark-bottom>img{
+	width: 198px;
+	height: 105px;
+}
+.text-box {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 0 15px;
+}
+.text-box>p {
+	margin: 0 0 20px 0;
+	line-height: 14px
+}
+.text-box p>a {
+	text-decoration: none;
+	color: red;
+}
+.text-box p.bold {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-align: left;
+	color: #263555;
+}
+.button {
+	align-self: flex-end;
+	margin-bottom: 20px;
+	font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+    width: 64px;
+    height: 20px;
+    border-radius: 6px;
+	border: 1px solid #b2abab;
+    background-color: #fbf6f8;
+}
+.button > a {
+	text-decoration: none;
+	color: black;
+}
 
+aside {
+	margin: 0 0 0 20px;
+    display: flex;
+	flex-direction: column;
+	width: 288px;
+	border: 1px solid #dedbdb;
+}
+aside>lable {
+	padding: 8px 35px;
+    text-align: center;
+    border-bottom: 1px solid #dedbdb;
+	background: #fcfafa;
+    cursor: pointer;	
+}
+aside>p {
+	margin:41px 0 0 18px;
+	font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-align: left;	
+}
+aside>input {
+	margin: 20px 0 0 0;
+	width: 246px;
+	align-self: center;
+	line-height: 28px;
+	padding-left: 10px;
+    border: 1px solid #dedbdb;
+    border-radius: 6px;
+}
+.spisok {
+	list-style-image: url("../img/shape_r.png");
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 600;
+    color: #263555;
+    margin: 46px 0 40px 44px;
+}
 
+	
 /*START bottom + footer + social networks links CSS*/
 
 .bottom {
