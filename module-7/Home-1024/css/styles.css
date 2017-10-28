@@ -98,7 +98,7 @@ main {
     margin: 58px 61px 0 61px;
     width: 902px;
     height: 579px;
-    background-image: url(../img/Layer-01.jpg);    
+    background-image: url(../img/layer-01.jpg);    
 }
 .box-1 {
     top: 218px;
@@ -285,7 +285,7 @@ p {
     border-bottom: 1px solid #fff;
     background: #fff;
 }
-.tabs>input:checked + label>h3 { /*два часа убил на эту комбинацию*/
+.tabs>input:checked + label>h3 { /*два часа убил на эту комбинацию...*/
     color: #38afe5;
 }
 #tab_1:checked ~ #box_1,
