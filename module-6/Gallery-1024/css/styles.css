@@ -106,18 +106,18 @@ h2 {
     width: 902px;
 }
 .image {
-	overflow:hidden;
-	width: 288px;
+    overflow:hidden;
+    width: 288px;
     height: 154px;
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 .image > img {
     transition: all 1s ease-out;
  }
 .image > img:hover{
     transform: scale(1.1);
-	filter: brightness(65%);
-	cursor: url(../img/icon-01.png), pointer;
+    filter: brightness(65%);
+    cursor: url(../img/icon-01.png), pointer;
  }
 
 /*START bottom + footer + social networks links CSS*/
@@ -141,8 +141,7 @@ h2 {
     font-family: Arial, sans-serif;
     font-size: 12px;
     line-height: 19px;
-    color: #fff;
-    
+    color: #fff;    
 }
 .link_item > a {
     font-family: "Open Sans", sans-serif;
