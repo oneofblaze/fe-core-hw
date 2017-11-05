@@ -1,0 +1,369 @@
+body {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/page-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1vw;
+}
+
+/*START menu CSS*/
+
+nav {
+	width: 53.33%;
+	margin: 46px 0 46px 0;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+
+.logo {
+	width: 138px;
+	height: 138px;
+	text-align: center;
+	line-height: 138px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.logo > a {
+	text-decoration: none;
+	font-size: 60px;
+	font-family: "Dorsa", sans-serif;
+	color: #263555;
+	text-transform: uppercase;
+}
+
+.menu_item {
+	margin: 0 5% 0 5
+}
+
+.menu_item > a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-family: "Pathway Gothic One", sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+	top: 135px;
+	width: 66px;
+	height: 88px;
+	border-radius: 3px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 25px;
+	font-family: "Pathway Gothic One", sans-serif;
+	text-transform: uppercase;
+	background-color: #fff;
+
+}
+
+.submenu::before {
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: 28px;
+	border-width: 0 5px 5px 5px;
+	border-style: solid;
+	border-color: #fff transparent;
+	display: block;
+	width: 0;
+}
+
+.submenu_item > a {
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #6b7488;
+}
+
+.menu_item > a:hover {
+	color: #263555;
+}
+
+.menu_item:hover > .submenu {
+	display: block;
+}
+
+/*END menu CSS*/
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 53.33%;
+	/*	min-width: 1024px;*/
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #f9fcfe;
+}
+
+h2 {
+	margin: 11.41% 5.95% 0 5.95%;
+	font-family: "Pathway Gothic One", sans-serif;
+	font-size: 2vw;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #263555;
+	text-align: left;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	margin: 5.52% 5.95% 11.17% 5.95%;
+	width: 88.08%;
+}
+
+.image {
+	overflow: hidden;
+	width: 31.92%;
+	height: auto;
+	margin-bottom: 4.70%;
+}
+
+.image > img {
+	width: 100%;
+	transition: all 1s ease-out;
+}
+
+.image > img:hover {
+	transform: scale(1.1);
+	filter: brightness(65%);
+	cursor: url(../img/icon-01.png), pointer;
+}
+
+/*START bottom + footer + social networks links CSS*/
+
+.bottom {
+	width: calc(53.33% + 2px);
+	height: 135px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #30455b;
+}
+
+.link {
+	width: 25%;
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	line-height: 19px;
+	color: #fff;
+}
+
+.link_item > a {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.social_networks {
+	width: 200px;
+	height: 50px;
+	margin: 26px auto;
+	display: flex;
+}
+
+.nav-box {
+	margin: auto;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav_item > a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+}
+
+.nav_item:nth-of-type(1) > a {
+	background-image: url(../img/css_sprites.png);
+	background-repeat: no-repeat;
+	background-position: -10px -10px;
+	filter: opacity(.7);
+}
+
+.nav_item:nth-of-type(2) > a {
+	background-image: url(../img/css_sprites.png);
+	background-repeat: no-repeat;
+	background-position: -70px -10px;
+	filter: opacity(.7);
+}
+
+.nav_item:nth-of-type(3) > a {
+	background-image: url(../img/css_sprites.png);
+	background-repeat: no-repeat;
+	background-position: -130px -10px;
+	filter: opacity(.7);
+}
+
+.nav_item:nth-of-type(4) > a {
+	background-image: url(../img/css_sprites.png);
+	background-repeat: no-repeat;
+	background-position: -190px -10px;
+	filter: opacity(.7);
+}
+
+.nav_item > a:hover {
+	filter: opacity(1);
+}
+
+.privacy {
+	font-family: "Arial", sans-serif;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.to-top {
+	position: fixed;
+	bottom: 30px;
+	left: 74.32%;
+	width: 30px;
+	height: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	nav {
+		width: 20%;
+	}
+	.logo {
+		order: -1;		
+		width: 101px;
+		height: 101px;
+	    line-height: 101px;
+		margin: 0 50px;		
+	}
+	
+	
+	.logo > a {
+		font-size: 60px;		
+	}
+
+	.menu_item > a {
+		font-size: 20px;
+	}
+
+	.submenu {
+		display: none;
+		position: absolute;
+		top: 135px;
+		width: 66px;
+		height: 88px;
+		border-radius: 3px;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 25px;
+		font-family: "Pathway Gothic One", sans-serif;
+		text-transform: uppercase;
+		background-color: #fff;
+
+	}
+
+	.submenu::before {
+		content: "";
+		position: absolute;
+		top: -5px;
+		left: 28px;
+		border-width: 0 5px 5px 5px;
+		border-style: solid;
+		border-color: #fff transparent;
+		display: block;
+		width: 0;
+	}
+
+	.submenu_item > a {
+		display: inline-block;
+		text-align: center;
+		font-size: 14px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #6b7488;
+	}
+	main {
+		width: 40%;
+	}
+
+	.gallery {
+		margin: 8.03% 5.95% 8.03% 5.95%;
+		width: 88.02%;
+	}
+
+	.image {
+		min-width: 48.96%;
+		height: auto;
+	}
+	.image:nth-of-type(9) {
+		display: none;
+	}
+	.bottom {
+		width: calc(40% + 2px);
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	main {
+		width: 25%;
+	}
+
+	.gallery {
+		margin: 3.46% 5.95% 3.46% 5.95%;
+		width: 84.58%;
+	}
+
+	.image {
+		min-width: 100%;
+		height: auto;
+	}
+
+	.image:nth-of-type(7),
+	.image:nth-of-type(8),
+	.image:nth-of-type(9) {
+		display: none;
+	}
+	.bottom {
+		width: calc(25% + 2px);
+	}
+	.link {
+		width: 20%;
+	}
+}
