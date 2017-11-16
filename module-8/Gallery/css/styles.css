@@ -453,14 +453,14 @@ footer {
 	}
 	.link:nth-of-type(4) > .link_item {
 		display: flex;
-		justify-content:space-between;
+		justify-content: space-between;
 	}
 	.link:nth-of-type(4) {
 		width: 100%;
 		margin: 24px 30px 36px 80px;
 	}
 	.icon-tel::before {
-		content: "TEL:"/"url(../img/rr-1.png)";
+		content: url(../img/rr-1.png);
 	}
 	.icon-mail::before {
 		content: url(../img/rr-2.png);
