@@ -200,7 +200,7 @@ ol {
 	font-family: Arial, sans-serif;
 	font-size: 14px;
 	text-align: left;
-	line-height: 24px;
+	line-height: 30px;
 	font-weight: 500;
 	color: #263555;
 }
@@ -460,7 +460,8 @@ ol {
 	}
 	.spisok {
 		font-size: 15px;
-		line-height: 26px;
+		line-height: 28px;
+		margin: 0 0 80px 0;
 	}
 	.testimonial {
 		margin: 50px 0 0 0;
@@ -657,7 +658,8 @@ ol {
 	}
 	.spisok {
 		font-size: 15px;
-		line-height: 26px;
+		line-height: 30px;
+		margin: 0 0 80px 0;
 	}
 	.testimonial {
 		margin: 50px 0 0 0;
