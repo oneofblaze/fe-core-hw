@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<meta content="Pavlo Bezsmertnyy" name="author">
+	<title>Module#11_Gallery+sass</title>
+</head>
+
+<body>
+	<nav>
+		<div class="logo"><a href="#">JOURNEY</a></div>
+		<ul class="menu">
+			<li class="menu__item"><a href="#">HOME</a></li>
+			<li class="menu__item">
+				<a href="#" class="sub-sign">ABOUT</a>
+				<ul class="submenu">
+					<li class="submenu__item"><a href="#">AGENCY</a></li>
+					<li class="submenu__item"><a href="#">NEWS</a></li>
+					<li class="submenu__item"><a href="#">TEAM</a></li>
+				</ul>
+			</li>
+			<li class="menu__item"><a href="#">GALLERY</a></li>
+			<li class="menu__item"></li>
+			<li class="menu__item"><a href="#">TOURS</a></li>
+			<li class="menu__item"><a href="#">BLOG</a></li>
+			<li class="menu__item"><a href="#">CONTACTS</a>
+			</li>
+		</ul>
+	</nav>
+	<main class="gallery">
+		<h2 class="gallery__title">Our Gallery</h2>
+		<div class="gallery__body">
+			<picture class="gallery__image">
+				<source srcset="images/img1.jpg,
+                  images/img1@2x.jpg 2x">
+				<img srcset="images/img1.jpg" alt="default image">
+			</picture>
+			<picture class="gallery__image">
+				<source srcset="images/img2.jpg,
+                  images/img2@2x.jpg 2x">
+				<img srcset="images/img2.jpg" alt="default image">
+			</picture>
+			<picture class="gallery__image">
+				<source srcset="images/img3.jpg,
+                  images/img3@2x.jpg 2x">
+				<img srcset="images/img3.jpg" alt="default image">
+			</picture>
+			<picture class="gallery__image">
+				<source srcset="images/img4.jpg,
+                  images/img4@2x.jpg 2x">
+				<img srcset="images/img4.jpg" alt="default image">
+			</picture>
+			<picture class="gallery__image">
+				<source srcset="images/img5.jpg,
+                  images/img5@2x.jpg 2x">
+				<img srcset="images/img5.jpg" alt="default image">
+			</picture>
+			<picture class="gallery__image">
+				<source srcset="images/img6.jpg,
+                  images/img6@2x.jpg 2x">
+				<img srcset="images/img6.jpg" alt="default image">
+			</picture>
+			<picture class="gallery__image">
+				<source srcset="images/img7.jpg,
+                  images/img7@2x.jpg 2x">
+				<img srcset="images/img7.jpg" alt="default image">
+			</picture>
+			<picture class="gallery__image">
+				<source srcset="images/img8.jpg,
+                  images/img8@2x.jpg 2x">
+				<img srcset="images/img8.jpg" alt="default image">
+			</picture>
+			<picture class="gallery__image">
+				<source srcset="images/img9.jpg,
+                  images/img9@2x.jpg 2x">
+				<img srcset="images/img9.jpg" alt="default image">
+			</picture>
+		</div>
+	</main>
+	<section class="bottom">
+		<ul class="link-box">
+			<li class="link-box__item"><a href="#">FAQS Page</a></li>
+			<li class="link-box__item"><a href="#">People Say</a></li>
+		</ul>
+		<ul class="link-box">
+			<li class="link-box__item"><a href="#">Useful links</a></li>
+			<li class="link-box__item"><a href="#">Partners</a></li>
+		</ul>
+		<ul class="link-box">
+			<li class="link-box__item"><a href="#">Insurance</a></li>
+			<li class="link-box__item"><a href="#">Family Travel</a></li>
+		</ul>
+		<ul class="link-box">
+			<li class="link-box__item link-box__item--line">
+				<a href="#">CONTACT US:</a>
+				<div class="icon-tel">TEL: 1-800-234-5678</div>
+				<div class="icon-mail">info@demolink.org</div>
+			</li>
+		</ul>
+	</section>
+	<footer>
+		<div class="social-networks">
+			<ul class="social-networks_inlinebox">
+				<li class="social-networks__icon">
+					<a href="https://twitter.com"><svg class="social-networks__icon--svg" height="46" viewbox="0 0 46 46" width="46" xmlns="http://www.w3.org/2000/svg">
+					<circle class="circle" cx="23" cy="23" r="23"></circle>
+					<path class="letter" d="M31.52 17.716c-.627.278-1.302.466-2.008.55.722-.432 1.275-1.116 1.536-1.933-.676.4-1.422.69-2.22.847-.637-.68-1.546-1.103-2.552-1.103-1.93 0-3.494 1.565-3.494 3.495 0 .273.03.54.09.796-2.904-.146-5.48-1.536-7.205-3.653-.3.52-.473 1.12-.473 1.76 0 1.212.617 2.28 1.555 2.908-.576-.017-1.115-.176-1.587-.436v.043c0 1.694 1.205 3.107 2.805 3.427-.295.082-.603.123-.923.123-.225 0-.444-.02-.657-.062.445 1.388 1.736 2.4 3.266 2.425-1.196.94-2.704 1.498-4.34 1.498-.283 0-.562-.013-.835-.046 1.55.99 3.385 1.568 5.36 1.568 6.43 0 9.944-5.323 9.944-9.94 0-.153-.003-.306-.01-.454.684-.492 1.278-1.108 1.745-1.81"></path></svg></a>
+				</li>
+				<li class="social-networks__icon">
+					<a href="https://www.facebook.com"><svg class="social-networks__icon--svg" height="46" viewbox="0 0 46 46" width="46" xmlns="http://www.w3.org/2000/svg">
+					<circle class="circle" cx="23" cy="23" r="23"></circle>
+					<path class="letter" d="M18.896 20.12h1.758v-1.708c0-.753.02-1.915.566-2.635.576-.762 1.368-1.28 2.73-1.28 2.218 0 3.15.316 3.15.316l-.438 2.605s-.73-.212-1.417-.212c-.684 0-1.296.245-1.296.93v1.985h2.803l-.194 2.547h-2.61v8.84h-3.297v-8.84h-1.758V20.12z"></path></svg></a>
+				</li>
+				<li class="social-networks__icon">
+					<a href="https://plus.google.com/"><svg class="social-networks__icon--svg" height="60px" version="1.1" viewbox="0 0 60 60" width="60px" xmlns="http://www.w3.org/2000/svg">
+					<path class="circle" d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z"></path>
+					<path class="letter" d="M27.9622852,27.3677615 C28.9418727,26.3850463 29.027571,25.0213805 29.027571,24.2532237 C29.027571,21.1840371 27.1941284,16.4071406 23.6542269,16.4071406 C22.5454665,16.4071406 21.3516333,16.9619899 20.6685493,17.815845 C19.9438672,18.711298 19.7299343,19.8613438 19.7299343,20.970417 C19.7299343,23.8269217 21.3932314,28.5615947 25.060742,28.5615947 C26.126966,28.561282 27.2785756,28.0492817 27.9622852,27.3677615 L27.9622852,27.3677615 Z M26.7243518,35.4693756 C26.3831225,35.425901 26.1698152,35.425901 25.7441387,35.425901 C25.3600604,35.425901 23.0568412,35.5115992 21.265935,36.1092978 C20.3279456,36.450527 17.5987372,37.4729637 17.5987372,40.5011777 C17.5987372,43.5287662 20.5409402,45.7028124 25.1042166,45.7028124 C29.198342,45.7028124 31.372701,43.7420735 31.372701,41.0985634 C31.372701,38.9229533 29.9658732,37.7725948 26.7243518,35.4693756 L26.7243518,35.4693756 Z M39.2307692,31.1538462 L34.6153846,31.1538462 L34.6153846,28.8461538 L39.2307692,28.8461538 L39.2307692,24.2307692 L41.5384615,24.2307692 L41.5384615,28.8461538 L46.1538462,28.8461538 L46.1538462,31.1538462 L41.5384615,31.1538462 L41.5384615,35.7692308 L39.2307692,35.7692308 L39.2307692,31.1538462 Z M29.7525658,16.5347497 C30.7327789,17.3454428 32.7801543,19.0506507 32.7801543,22.2924848 C32.7801543,25.448308 30.9889354,26.940834 29.198342,28.347349 C28.6441181,28.9018857 28.0035705,29.4992714 28.0035705,30.4375736 C28.0035705,31.3758758 28.6441181,31.8878761 29.1120182,32.2710162 L30.6480189,33.4642238 C32.5249361,35.0418226 34.2298312,36.4927506 34.2298312,39.4358919 C34.2298312,43.4433807 30.3490133,47.4952824 23.013992,47.4952824 C16.8315187,47.4952824 13.8461538,44.5530794 13.8461538,41.3966308 C13.8461538,39.8612556 14.6139978,37.6868966 17.1308371,36.193745 C19.7740345,34.5729843 23.3570979,34.3615535 25.2749876,34.2323806 C24.6779146,33.4642238 23.9957689,32.6532179 23.9957689,31.3327139 C23.9957689,30.6077191 24.2090763,30.1804788 24.4223837,29.6691041 C23.9522943,29.7113277 23.4843942,29.7551151 23.057154,29.7551151 C18.5376649,29.7551151 15.9789148,26.3847336 15.9789148,23.0593905 C15.9789148,21.0986516 16.8740551,18.922416 18.7078104,17.3448172 C21.1389515,15.3412292 24.0383053,15 26.3408989,15 L35.1252843,15 L32.3960759,16.5341241 L29.7525658,16.5341241 L29.7525658,16.5347497 Z"></path></svg></a>
+				</li>
+				<li class="social-networks__icon">
+					<a href="https://www.instagram.com/"><svg class="social-networks__icon--svg" height="134.105px" viewbox="0 0 135 134.105" width="135px" xmlns="http://www.w3.org/2000/svg">
+					<circle class="circle" cx="67.5" cy="67.054" r="63.333"></circle>
+					<path class="letter" d="M100.002,65.316v23.487H86.387V66.889c0-5.504-1.971-9.262-6.898-9.262 c-3.764,0-6.002,2.533-6.988,4.981c-0.359,0.875-0.451,2.094-0.451,3.319v22.875H58.431c0,0,0.183-37.116,0-40.959h13.618v5.804 c-0.026,0.044-0.063,0.091-0.088,0.133h0.088v-0.133c1.809-2.786,5.041-6.768,12.273-6.768 C93.285,46.881,100.002,52.735,100.002,65.316z M44.182,28.099c-4.659,0-7.707,3.057-7.707,7.075c0,3.933,2.959,7.081,7.527,7.081 h0.091c4.749,0,7.703-3.148,7.703-7.081C51.707,31.156,48.842,28.099,44.182,28.099z M37.283,88.804h13.615V47.845H37.283V88.804z"></path></svg></a>
+				</li>
+			</ul>
+		</div>
+		<div class="copywriting">
+			Journey &#9400; 2013 | Privacy Policy | Website designed by TemplateMonster.com
+		</div>
+	</footer>
+	<a class="to-top__btn" href="#"><img src="images/shape.png" alt="to-top"></a>
+</body>
+
+</html>
